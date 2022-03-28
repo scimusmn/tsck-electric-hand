@@ -37,6 +37,7 @@ public:
 
     void push(int button)
     {
+	if (length >= MAX_SEQUENCE_LENGTH) return;
 	buttons[length] = button;
 	length += 1;
     }
